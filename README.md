@@ -14,7 +14,7 @@ The base Docker-Image is [sphinxdoc/sphinx-latexpdf](https://hub.docker.com/r/sp
 
 ## Usage
 To build your own Docker-Image use `docker build --tag sphinx-latex-kroki:forme .`
-You can also pull ``sphinx-latex-kroki:latest`` from dockerhub.
+You can also pull ``docker pull mrburnsde/sphinx-latex-kroki`` from dockerhub.
 
 To build you documentation to pdf use 
 ``docker run --rm -v {PWD}:/docs docker.io/library/sphinx-latex-kroki:forme  make latexpdf``
