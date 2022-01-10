@@ -1,0 +1,75 @@
+@startuml "Sample diagram"
+
+title
+ __Plantuml__-Example for a more complicated diagram
+
+ <font size="10"> just to have an idea how it looks like in the document</font>
+end title
+
+'Lets define some common colors globally
+!$COLOR1 = "#118888"
+!$COLOR2 = "#daa520"
+!$COLOR3 = "#eedd99"
+ 
+
+skinparam sequenceMessageAlign center
+skinparam BoxPadding 0
+skinparam backgroundColor transparent
+
+
+box "Left" #APPLICATION
+' Actor "Ausweisinhaber" as USER
+participant "One" as LEFT1
+participant "Two" as LEFT2
+participant "Three" as LEFT3
+endbox
+
+box "Middle" #TECHNOLOGY
+participant "Four" as MID1
+participant "Five" as MID2
+endbox
+
+box "Right" #IMPLEMENTATION
+participant "Six" as RIGHT1
+participant "Seven" as RIGHT2
+endbox
+
+autonumber "<b>[000]"
+
+LEFT2->RIGHT1: How are you?
+note right $COLOR1
+  a very important note
+end note
+
+RIGHT1-->LEFT2: Six
+LEFT2->LEFT3: Hi how are you?
+LEFT3->RIGHT1: please say something
+RIGHT1->RIGHT2: anyone there?
+RIGHT2->MID2: did you talk to me?
+MID2-->RIGHT2: No it was number six
+RIGHT2-->RIGHT1: yep i am here, hello.
+RIGHT1-->LEFT3: what should i say?
+LEFT3->MID2: dont like to talk to numvber six
+LEFT3<-->MID2: why?
+
+note over MID2,RIGHT2 $COLOR2
+for some reason nobody like to talk
+end note
+
+MID2->LEFT1: Please be quiet
+LEFT1-->MID2: i didn't say anything
+MID2->LEFT3: who is talking all the time?
+LEFT3->LEFT2: what is wrong with Four?
+LEFT2-->LEFT3: i just dont know
+loop endless
+            RIGHT1<->RIGHT2: chatting
+            MID2<->MID1: chatting
+            LEFT3<->LEFT2: chatting
+            LEFT2<->LEFT1: chatting
+end
+
+note over LEFT1,RIGHT2 $COLOR3
+ <&musical-note>If they didn't die they still keep on chatting <&musical-note>
+end note
+
+@enduml

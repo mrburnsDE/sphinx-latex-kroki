@@ -1,0 +1,47 @@
+@startmindmap
+<style>
+node {
+    Padding 12
+    Margin 3
+    HorizontalAlignment center
+    LineColor blue
+    LineThickness 3.0
+    BackgroundColor Application
+    RoundCorner 40
+    MaximumWidth 200
+}
+
+rootNode {
+    LineStyle 8.0;3.0
+    LineColor red
+    BackgroundColor Motivation
+    LineThickness 1.0
+    RoundCorner 0
+    Shadowing 0.0
+}
+
+leafNode {
+    LineColor black
+    LineThickness 1.5
+    RoundCorner 50
+    Padding 15
+}
+
+arrow {
+    LineStyle 4
+    LineThickness 1.5
+    LineColor blue
+}
+</style>
+
++ Thinking of
+++_ <size:22><U+1F47C> Good Things</size>
++++ having an ice in the sunshine
++++ drinking a chilled beer
++++ no apointments overdue
+--_ <size:22>Bad Things <U+1F620></size>
+--- raining on the weekend
+--- COVID-19
+--- to miss a train
+
+@endmindmap
