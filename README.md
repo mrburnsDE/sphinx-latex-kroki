@@ -23,7 +23,7 @@ You can also pull
 
 from dockerhub.
 
-To build you documentation to pdf use 
+To build your own documentation to pdf use 
 
 ``docker run --rm -v ${PWD}:/docs docker.io/mrburnsde/sphinx-latex-kroki make latexpdf``
  
