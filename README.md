@@ -10,7 +10,9 @@ Based on the efforts of the following projects i composed a mashine which fits t
 - [sphinx-contrib-kroki](https://github.com/sphinx-contrib/kroki)
 - [sphinxcontrib-svg2pdfconverter](https://pypi.org/project/sphinxcontrib-svg2pdfconverter/)
 
-The base Docker-Image is [sphinxdoc/sphinx-latexpdf](https://hub.docker.com/r/sphinxdoc/sphinx-latexpdf)
+The base image is [sphinxdoc/sphinx-latexpdf](https://hub.docker.com/r/sphinxdoc/sphinx-latexpdf).
+
+The image of this project can be found [here (mrburnsde/sphinx-latex-kroki)](https://hub.docker.com/r/mrburnsde/sphinx-latex-kroki).
 
 ## Usage
 To build your own Docker-Image use 
